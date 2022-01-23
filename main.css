@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+   
+}
+
+    .header{
+        min-height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(163, 188, 182, 0.7),rgba(57, 96, 61, 0.5)), url(src/images/main1.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    .hero-btn:start{
+        width:200%;
+    }
+
+nav{
+    display:flex;
+    padding:2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+    .nav-links ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+    }
+
+    .nav-links ul li a{
+        color: #ffffff;
+        text-decoration: wavy;
+        font-size: 13px;
+    }
+
+
+    .nav-links ul li a::after{
+        content:'';
+        width: 0%;
+        height: 2px;
+        background: rgb(255, 123, 0);
+        display: block;
+        margin: auto;  
+        transition: 0.5s;
+        font-size: 0px;
+    }
+
+    .nav-links ul li a:hover::after{
+        content:'';
+        width: 100%;
+        height: 2px;
+        background: #ffda08;
+        color:#ffda08;
+        transition: 0.5s;
+    }
+
+    .motto-text{
+        width: 80%;
+        color: #ffffff;
+        position: absolute;
+        top: 44%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .motto-text h1{
+        font-size:72px;
+    }
+    .motto-text p{
+        margin: 10px 0 40px;
+        font-size:14px;
+        color: #ffffff;
+    }
+
+    .hero-btn{
+        display: inline-block;
+        text-decoration:none;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        padding: 12px 34px;
+        font-size: 13px;
+        background: transparant;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .hero-btn::after{
+        background:#f44336;
+        transition:0.5s;
+    }
+
+    .hero-btn:hover{
+        border: 1px solid #ffff;
+        background:#ffda08;
+        transition: 1s;
+        font-size: 15px;
+    }
+
+    @media(max-width:700px){
+
+
+        nav img{
+            width: 50px;
+        }
+        .nav-links ul li a{
+            font-size: 9.51px;
+            margin-left: 0px;
+            margin-right: 0px;
+
+        }
+        
+
+        .motto-text h1{
+            font-size:50px;
+        }
+
+        .hero-btn{
+            font-size: 10px;
+        }
+        .hero-btn:hover{
+            font-size:15px;
+        }
+        .row{
+            flex-direction: column;
+        }
+        
+        .testimonial-col img{
+            margin-left: 0px;
+            margin-right: 15px;
+            border-radius: 50%;
+        }
+
+        .cta h1{
+            font-size:24px;
+        }
+
+    }
+
+/*-----Courses---*/
+
+.course{
+    width:100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px; 
+    background:#a3bcb60a;
+}
+
+h1{
+    font-size:36px;
+    font-weight: 600px;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300px;
+    line-height: 22px;
+    padding: 10px;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    transition: 1s;
+}
+
+    .row{
+        margin-top:2%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .course-col{
+        flex-basis: 31%;
+        background: #a3bcb631;
+        border-radius: 10px;
+        margin-bottom: 1%;
+        margin:2%;
+        padding:20px 12px;
+        box-sizing: border-box;
+        transition: 1s;
+    }
+
+    .course-col:hover{
+        box-shadow:0 0 20px 0px rgba(0,0,0,0.2);   
+    }
+/*-----Campus-----*/
+
+    .campus{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-top: 50px;
+        background:#a3bcb60a;
+
+    }
+
+    .campus-col{
+        flex-basis: 32%;
+        border-radius: 10px;
+        margin-bottom:30px;
+        margin:2%;
+        position: relative;
+        overflow: hidden;
+        transition: 1s;
+    }
+
+    .campus-col:hover{
+        box-shadow:0 0 20px 0px rgba(0,0,0,0.2);
+
+    }
+
+    .campus-col img{
+        width: 100%;
+        display: block;
+        transition: .5s;
+    }
+    .campus-col:hover img{
+        width:105%;
+    }
+
+    .layer{
+        background:transparant;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition:1s;
+    }
+    .layer:hover{
+        background:rgba(26, 113, 228, 0.7); 
+        font-size: 1px;
+        color:#ffff
+    }
+    .layer h3{
+        width: 100%;
+        font-weight: 500;
+        color: #ffff;
+        font-size: 20px;
+        bottom: 0%; 
+        transform:translateY(-50%);
+        position: absolute;
+        opacity:1;
+        transition:1s;
+    }
+    .layer:hover h3{
+        opacity:0;
+        bottom: 49%;
+    }
+
+    .layer h4{
+        opacity: 0;
+        width: 100%;
+        font-weight: 30;
+        bottom: 0%;
+        transform:translateY(-5%);
+        position: absolute;
+        transition: 1s;
+        font-size:0px;
+    }
+    .layer:hover h4{
+        opacity:70%;
+        color:#ffff;
+        bottom:39%;
+        font-size: 15px;
+    }
+
+    .layer h5{
+        width: 100%;
+        font-weight: 500;
+        color: #ffff;
+        font-size: 20px;
+        bottom: 0%; 
+        transform:translateY(-50%);
+        position: absolute;
+        opacity:0;
+        transition:1s;
+    }
+    .layer:hover h5{
+        bottom:49%;
+        opacity: 70%;
+        color: #ffff;
+        font-size:35px;
+    }
+
+/*---facilities--*/
+
+.facilities{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top:100px;
+    background:#a3bcb60a;
+}
+
+.facilities-col{
+    flex-basis:31%;
+    border-radius: 10px;
+    margin-bottom: 8%;
+    margin:2%;
+    text-align:inherit;
+    transition: 1s;
+}
+
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+    transition: 1s;
+    align-self: center;
+}
+
+.facilities-col p{
+    padding: 0;
+    transition: 1s;
+}
+
+.facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: inherit;
+    font-size: 20px;
+    transition: 1s;
+}
+
+.facilities-col:hover{
+    box-shadow:0 0 20px 0px rgba(50, 53, 54, 0.486);
+}
+.facilities-col:hover img{
+    transform:translateY(-5%);
+}
+.facilities-col:hover p{
+    font-size: 14.6px;
+    color: rgb(0,0,0.8,.8);
+}
+.facilities-col:hover h3{
+    font-size:22px;
+}
+
+
+
+/*-------testimonials*/
+
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.testimonial-col{
+    flex-basis: 42%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background:#DADED4;
+    padding:25px;
+    cursor: pointer;
+    display: flex;
+    transition: 1s;
+}
+
+.testimonial-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.testimonial-col p{
+    padding: 0;
+    transition: 1s;
+}
+
+.testimonial-col h3{
+    margin-top: 15px;
+    text-align: left;
+    transition: 1s;
+}
+
+.testimonial-col .fa{
+    color: #f1cf09;
+    transition: 1s;
+}
+
+.testimonial-col:hover{
+    margin-bottom: 4%;
+    box-shadow:0 0 20px 0px rgba(50, 53, 54, 0.486);
+}
+
+.testimonial-col:hover img{
+    height:45px;
+    transform: translateY(-20%);
+    box-shadow:0 0 20px 0px rgba(75, 152, 126, 0.486);
+
+}
+
+.testimonial-col:hover h3{
+    font-size: 20px;
+    font-style: bold;
+}
+
+.testimonial-col:hover p{
+    transform: translateY(-5%);
+}
+
+.testimonial-col:hover .fa{
+    color: #ffd900;
+    margin:3px;
+    transform: rotate(90deg);
+
+}
+
+/*----------------footer------------*/
+
+.footer{
+    width: 95.5%;
+    text-align: center;
+    padding: 30px;
+    font-weight: 600;
+    background:#3c403d11
+}
+
+.icon .fa{
+    color:#ffff;
+    margin: 13px 13px;
+    cursor: pointer;
+    padding: 18px;
+}
+
+
+/*----------------Contact Us---------------*/
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(163, 188, 182, 0.452),rgba(57, 96, 61, 0.308)), url(src/images/main2.jpg);
+    background-position: center;
+    background-size: 800px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    transition: 1s;
+}
+
+.cta h1{
+    color: #fff;
+    transition: 2s;
+}
+
+.cta:hover{
+    background-size: 900px;
+    width: 83%;
+}
+
+.cta:hover h1{
+    font-size:41px;
+    margin:2px;
+}
+
+.cta:hover img{
+    transform:rotate(90deg)
+}
