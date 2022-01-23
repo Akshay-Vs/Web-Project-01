@@ -240,7 +240,7 @@ h3{
         transition:1s;
     }
     .layer:hover{
-        background:rgba(26, 113, 228, 0.7); 
+        background:rgba(51, 63, 79, 0.7); 
         font-size: 1px;
         color:#ffff
     }
