@@ -237,8 +237,8 @@ h3{
         position: absolute;
         top: 0;
         left: 0;
-        transition:1s;
-    }
+        
+        }
     .layer:hover{
         background:rgba(51, 63, 79, 0.7); 
         font-size: 1px;
@@ -391,7 +391,7 @@ h3{
 }
 
 .testimonial-col .fa{
-    color: #f1cf09;
+    color: #383838;
     transition: 1s;
 }
 
@@ -401,8 +401,8 @@ h3{
 }
 
 .testimonial-col:hover img{
-    height:45px;
-    transform: translateY(-20%);
+    height:50px;
+    transform: translateX(-15%);
     box-shadow:0 0 20px 0px rgba(75, 152, 126, 0.486);
 
 }
@@ -417,7 +417,7 @@ h3{
 }
 
 .testimonial-col:hover .fa{
-    color: #ffd900;
+    color: #e6c50e;
     margin:3px;
     transform: rotate(90deg);
 
